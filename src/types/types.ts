@@ -9,8 +9,9 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  icon: string;
-  level: 'basic' | 'intermediate' | 'advanced';
+  icon: string; // Nombre de clase de icono o emoji
+  level: number; // 1-100
+  category: 'frontend' | 'backend' | 'tools' | 'soft';
 }
 
 export interface ButtonProps {
